@@ -3,7 +3,7 @@ import pandas as pd
 import boto3
 
 # Reemplaza esto con la IP privada de la MV donde corre MySQL
-MYSQL_HOST = '72.31.31.181'  # <-- reemplaza esto
+MYSQL_HOST = '172.31.29.213'  # <-- reemplaza esto
 MYSQL_PORT = 8005
 
 DB_CONFIG = {
@@ -15,7 +15,7 @@ DB_CONFIG = {
 }
 
 CSV_FILENAME = 'data_mysql.csv'
-BUCKET_NAME = 'asr-output-1'
+BUCKET_NAME = 'jdls-output-1'
 S3_KEY = 'data_mysql.csv'
 
 def conectar_mysql():
